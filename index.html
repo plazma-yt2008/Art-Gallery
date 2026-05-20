@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aethelgard | Contemporary Fine Art Gallery</title>
+    <meta name="description" content="Immersive contemporary fine art gallery showcasing visionary global acquisitions.">
+    <!-- Google Fonts: Editorial Serif + Clean Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. CINEMATIC CURSOR INTERACTION -->
+    <div class="custom-cursor"></div>
+
+    <!-- 2. LUXURY FLOATING NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AETHELGARD</a>
+            <div class="nav-links">
+                <a href="#collection">Collection</a>
+                <a href="#exhibition">Exhibitions</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#collection" class="nav-cta">Private Bureau</a>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION: FULLSCREEN CINEMATIC CANVAS -->
+    <header class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=2000&q=90');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle animate-fade">Current Exhibition</p>
+            <h1 class="title animate-fade">Apertures of<br>Light & Mass</h1>
+            <div class="hero-ctas animate-fade">
+                <a href="#collection" class="btn btn-primary">Explore Collection</a>
+                <a href="#exhibition" class="btn btn-secondary">View Exhibition</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="indicator-line"></div>
+        </div>
+    </header>
+
+    <!-- 4. DYNAMIC FILTERABLE CATALOG SECTION -->
+    <section id="collection" class="catalog-section">
+        <div class="section-header">
+            <div class="header-titles">
+                <p class="tagline">The Catalog</p>
+                <h2 class="section-title">Available Acquisitions</h2>
+            </div>
+            
+            <!-- Luxury Filtering Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Minimalism">Minimalism</button>
+                <button class="filter-btn" data-filter="Sculpture">Sculpture</button>
+                <button class="filter-btn" data-filter="Abstract">Abstract</button>
+            </div>
+        </div>
+
+        <!-- Masonry Grid Framework -->
+        <div class="artwork-grid">
+            <!-- Item 1 -->
+            <div class="artwork-card" data-category="Minimalism" onclick="openInquiryModal('Echoes of Silence, No. 4', 'Aveline Moreau', '$15,000 - $20,000', 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80')">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80" alt="Echoes of Silence" loading="lazy">
+                    <div class="hover-overlay"><span>View Dossier</span></div>
+                </div>
+                <div class="card-meta">
+                    <div class="meta-row">
+                        <h3>Echoes of Silence, No. 4</h3>
+                        <span class="price">$15,000</span>
+                    </div>
+                    <p class="artist">Aveline Moreau</p>
+                    <p class="specs">Oil & Marble Dust on Linen · 2025</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="artwork-card" data-category="Sculpture" onclick="openInquiryModal('Monolithic Void II', 'Kaito Tanaka', '$35,000 - $40,000', 'https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=1200&q=80')">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=1200&q=80" alt="Monolithic Void" loading="lazy">
+                    <div class="hover-overlay"><span>View Dossier</span></div>
+                </div>
+                <div class="card-meta">
+                    <div class="meta-row">
+                        <h3>Monolithic Void II</h3>
+                        <span class="price">$35,000</span>
+                    </div>
+                    <p class="artist">Kaito Tanaka</p>
+                    <p class="specs">Polished Basalt & Raw Iron · 2026</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="artwork-card" data-category="Abstract" onclick="openInquiryModal('Chromatic Fracture', 'Elena Rostova', '$8,000 - $12,000', 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80')">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80" alt="Chromatic Fracture" loading="lazy">
+                    <div class="hover-overlay"><span>View Dossier</span></div>
+                </div>
+                <div class="card-meta">
+                    <div class="meta-row">
+                        <h3>Chromatic Fracture</h3>
+                        <span class="price">$8,000</span>
+                    </div>
+                    <p class="artist">Elena Rostova</p>
+                    <p class="specs">Mixed Media on Canvas · 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONVERSION-OPTIMIZED ACQUISITION MODAL -->
+    <div id="inquiryModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-media">
+                    <img id="modalImg" src="" alt="Selected Artwork">
+                </div>
+                <div class="modal-form-panel">
+                    <span class="modal-tag">Acquisition Request</span>
+                    <h3 id="modalTitle">Artwork Title</h3>
+                    <p id="modalArtist" class="modal-artist">Artist Name</p>
+                    
+                    <div class="modal-valuation">
+                        <span>Private Valuation Tier</span>
+                        <span id="modalPrice" class="gold-text">$0,000</span>
+                    </div>
+
+                    <form id="acquisitionForm" onsubmit="handleInquirySubmit(event)">
+                        <div class="input-group">
+                            <label>Collector Email Address</label>
+                            <input type="email" required placeholder="collector@luxury-estates.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Special Delivery or Installation Requirements</label>
+                            <textarea rows="3" placeholder="Request private physical framing variations or secure global transit layouts..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Transmit Formal Inquiry</button>
+                    </form>
+
+                    <div id="successState" class="success-message hidden">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <h4>Inquiry Registered</h4>
+                        <p>An art advisor will coordinate a private secure response within 12 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animation Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
